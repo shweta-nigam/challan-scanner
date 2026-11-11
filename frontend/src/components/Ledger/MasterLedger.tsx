@@ -10,8 +10,10 @@ import {
   X,
   ClipboardList,
 } from "lucide-react";
-import { transactionsApi, Transaction, TransactionFilters } from "../../api/transactions";
-import { customersApi, Customer } from "../../api/customers";
+import { transactionsApi } from "../../api/transactions";
+import type { Transaction, TransactionFilters } from "../../api/transactions";
+import { customersApi } from "../../api/customers";
+import type { Customer } from "../../api/customers";
 import Modal from "../UI/Modal";
 
 type SortField = "date" | "billNo" | "customerName" | "runningBalance";

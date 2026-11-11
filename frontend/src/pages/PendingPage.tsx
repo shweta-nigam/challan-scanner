@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { CheckCircle, X, AlertCircle, ChevronRight, RefreshCw } from "lucide-react";
-import { pendingApi, PendingEntry } from "../api/scan";
-import { customersApi, Customer } from "../api/customers";
+import { pendingApi } from "../api/scan";
+import type { PendingEntry } from "../api/scan";
+import { customersApi } from "../api/customers";
+import type { Customer } from "../api/customers";
 import Modal from "../components/UI/Modal";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";

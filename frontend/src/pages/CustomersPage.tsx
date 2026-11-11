@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Plus, Edit3, Trash2, Search, Phone, Tag, X, Check } from "lucide-react";
-import { customersApi, Customer } from "../api/customers";
+import { customersApi } from "../api/customers";
+import type { Customer } from "../api/customers";
 import Modal from "../components/UI/Modal";
 
 export default function CustomersPage() {

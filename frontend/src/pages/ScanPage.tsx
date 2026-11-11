@@ -1,8 +1,8 @@
 import React, { useState, useRef, useCallback } from "react";
 import { Upload, X, ScanLine, CheckCircle, AlertTriangle, ChevronRight, Plus, Trash2 } from "lucide-react";
-import { scanApi, ScanResult, pendingApi } from "../api/scan";
-import { customersApi, Customer } from "../api/customers";
-import Modal from "../UI/Modal";
+import { scanApi, type ScanResult, pendingApi } from "../api/scan";
+import { customersApi,type Customer } from "../api/customers";
+import Modal from "../components/UI/Modal";
 import { useEffect } from "react";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
